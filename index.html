@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Jigyasa Patil, 3rd year Computer Science student and aspiring web developer. Built with HTML5 and CSS3.">
+  <meta name="author" content="Jigyasa Patil">
+  <title>Jigyasa Patil | Personal Portfolio</title>
+  <!-- Google Fonts: Plus Jakarta Sans & Inter for clean modern typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="#home" class="logo" aria-label="Jigyasa Patil Portfolio Home">
+        Jigyasa<span class="logo-dot">.dev</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link nav-btn">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main>
+
+    <!-- 1. Hero / Home Section -->
+    <section id="home" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge">
+            <span class="badge-dot"></span>
+            <span>Welcome to my portfolio</span>
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight">Jigyasa Patil</span>
+          </h1>
+          <p class="hero-role">Aspiring Web Developer &amp; Software Engineer</p>
+          <p class="hero-description">
+            I am a 3rd-year Computer Science undergraduate at Lakshmi Narain College of Technology &amp; Science (LNCTS), Bhopal. I enjoy turning ideas into neat, accessible, and responsive web pages using semantic HTML and clean CSS.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Projects</a>
+            <a href="#contact" class="btn btn-outline">Get in Touch</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-card">
+            <img src="profile/devpic.jpg" alt="Jigyasa Patil - Web Developer" class="hero-avatar">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. About Me Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get To Know Me</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">A brief overview of my background, education, and career aspirations.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Biography Card -->
+          <article class="about-card bio-card">
+            <div class="card-icon-wrap icon-teal">
+              <span>👩‍💻</span>
+            </div>
+            <h3 class="card-title">My Journey</h3>
+            <p>
+              Hello! I am a passionate Computer Science student who loves discovering how the web works behind the screen. My journey began with learning fundamental programming and markup, and quickly turned into a fascination with front-end design and responsive interfaces.
+            </p>
+            <p>
+              I take pride in writing structured, well-commented HTML and thoughtful CSS. I believe good web design is about clarity, accessibility, and creating welcoming experiences for every user.
+            </p>
+          </article>
+
+          <!-- Education Card -->
+          <article class="about-card edu-card">
+            <div class="card-icon-wrap icon-amber">
+              <span>🎓</span>
+            </div>
+            <h3 class="card-title">Education</h3>
+            <div class="edu-details">
+              <span class="edu-year">2024 &ndash; 2028 (Currently 3rd Year)</span>
+              <h4 class="edu-degree">Bachelor of Technology (B.Tech)</h4>
+              <p class="edu-branch">Computer Science &amp; Engineering</p>
+              <p class="edu-college">Lakshmi Narain College of Technology &amp; Science (LNCTS), Bhopal</p>
+              <p class="edu-meta">Focusing on Core Computer Science, Data Structures, Web Technologies, and Software Engineering principles.</p>
+            </div>
+          </article>
+
+          <!-- Career Interests Card -->
+          <article class="about-card career-card">
+            <div class="card-icon-wrap icon-teal">
+              <span>🎯</span>
+            </div>
+            <h3 class="card-title">Career Goals</h3>
+            <p>
+              My goal is to grow into a versatile front-end web developer and software engineer. I am eager to contribute to collaborative projects, learn industry-standard workflows, and craft user interfaces that are both aesthetically pleasant and functionally robust.
+            </p>
+            <ul class="interest-list">
+              <li><span class="check-icon">✓</span> Front-End Web Development</li>
+              <li><span class="check-icon">✓</span> Responsive &amp; Mobile-First Layouts</li>
+              <li><span class="check-icon">✓</span> Semantic HTML &amp; Web Standards</li>
+              <li><span class="check-icon">✓</span> Software Engineering Best Practices</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Capabilities</span>
+          <h2 class="section-title">My Skills</h2>
+          <p class="section-subtitle">Key tools and technologies I have been learning and utilizing in my projects.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill 1 -->
+          <article class="skill-card">
+            <div class="skill-icon">🌐</div>
+            <h3 class="skill-name">HTML5</h3>
+            <p class="skill-desc">Semantic elements, form inputs, metadata, and accessibility tags.</p>
+            <span class="skill-level-tag">Core Foundation</span>
+          </article>
+
+          <!-- Skill 2 -->
+          <article class="skill-card">
+            <div class="skill-icon">🎨</div>
+            <h3 class="skill-name">CSS3</h3>
+            <p class="skill-desc">CSS box model, typography, transitions, shadows, and variables.</p>
+            <span class="skill-level-tag">Styling &amp; Design</span>
+          </article>
+
+          <!-- Skill 3 -->
+          <article class="skill-card">
+            <div class="skill-icon">📐</div>
+            <h3 class="skill-name">Flexbox &amp; Grid</h3>
+            <p class="skill-desc">Modern two-dimensional layouts, card grids, and alignment systems.</p>
+            <span class="skill-level-tag">Layout Engines</span>
+          </article>
+
+          <!-- Skill 4 -->
+          <article class="skill-card">
+            <div class="skill-icon">📱</div>
+            <h3 class="skill-name">Responsive Design</h3>
+            <p class="skill-desc">Media queries, fluid layouts, and mobile-first design principles.</p>
+            <span class="skill-level-tag">Cross-Device</span>
+          </article>
+
+          <!-- Skill 5 -->
+          <article class="skill-card">
+            <div class="skill-icon">⚡</div>
+            <h3 class="skill-name">JavaScript (Basics)</h3>
+            <p class="skill-desc">Syntax fundamentals, variables, loops, and basic DOM concepts.</p>
+            <span class="skill-level-tag">In Progress</span>
+          </article>
+
+          <!-- Skill 6 -->
+          <article class="skill-card">
+            <div class="skill-icon">🐙</div>
+            <h3 class="skill-name">Git &amp; GitHub</h3>
+            <p class="skill-desc">Version control, repository management, commits, and project hosting.</p>
+            <span class="skill-level-tag">Version Control</span>
+          </article>
+
+          <!-- Skill 7 -->
+          <article class="skill-card">
+            <div class="skill-icon">💡</div>
+            <h3 class="skill-name">Problem Solving</h3>
+            <p class="skill-desc">Algorithmic thinking, core data structures, and logical debugging.</p>
+            <span class="skill-level-tag">Computer Science</span>
+          </article>
+
+          <!-- Skill 8 -->
+          <article class="skill-card">
+            <div class="skill-icon">🛠️</div>
+            <h3 class="skill-name">VS Code &amp; DevTools</h3>
+            <p class="skill-desc">Code editing, live server, element inspection, and debugging.</p>
+            <span class="skill-level-tag">Developer Tools</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio Work</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world academic and practice projects built using clean HTML and CSS.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-media">
+              <img src="images/project-1.svg" alt="Preview of TechFest 2026 Conference Landing Page" class="project-thumb">
+              <span class="project-category-badge">Landing Page</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">TechFest 2026 – Conference Landing Page</h3>
+              <p class="project-text">
+                A modern, responsive event landing page built for a college technical symposium. Features an announcement hero banner, event schedule grid, keynote speaker cards, and registration call-to-actions.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">Flexbox</span>
+                <span class="tech-tag">Responsive Design</span>
+              </div>
+              <div class="project-actions">
+                <a href="#projects" class="btn-card-link">Explore Details &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-media">
+              <img src="images/project-2.svg" alt="Preview of Student Feedback and Evaluation Survey Form" class="project-thumb">
+              <span class="project-category-badge badge-amber">Interactive Form</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Student Feedback &amp; Evaluation Survey</h3>
+              <p class="project-text">
+                A clean, accessible multi-field survey form designed to gather academic course feedback. Implements styled text fields, dropdown selectors, custom radio options, checkboxes, and fieldsets.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">HTML5 Forms</span>
+                <span class="tech-tag">CSS3 Box Model</span>
+                <span class="tech-tag">UI Styling</span>
+                <span class="tech-tag">Accessibility</span>
+              </div>
+              <div class="project-actions">
+                <a href="#projects" class="btn-card-link">Explore Details &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-media">
+              <img src="images/project-3.svg" alt="Preview of CulinaryDelight Recipe and Food Catalog" class="project-thumb">
+              <span class="project-category-badge">Catalog &amp; Gallery</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">CulinaryDelight – Recipe &amp; Food Catalog</h3>
+              <p class="project-text">
+                A multi-column recipe showcase website built with CSS Grid. Includes categorized food cards, preparation time badges, ingredient lists, and smooth hover elevation effects on every card.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS Grid</span>
+                <span class="tech-tag">Card Layouts</span>
+                <span class="tech-tag">CSS Hover States</span>
+              </div>
+              <div class="project-actions">
+                <a href="#projects" class="btn-card-link">Explore Details &rarr;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Interested in collaborating or discussing web development internship opportunities? Send a message!</p>
+        </div>
+
+        <div class="contact-layout">
+          <!-- Left Column: Contact Information Cards -->
+          <div class="contact-info-panel">
+            <div class="contact-card">
+              <div class="contact-icon">✉️</div>
+              <div class="contact-details">
+                <h4>Direct Email</h4>
+                <a href="mailto:jigyasa2906@gmail.com" class="contact-link">jigyasa2906@gmail.com</a>
+                <span class="contact-sub">Available for queries &amp; internship roles</span>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">📍</div>
+              <div class="contact-details">
+                <h4>Location</h4>
+                <p class="contact-text">Bhopal, Madhya Pradesh, India</p>
+                <span class="contact-sub">LNCTS Bhopal Campus</span>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">🌐</div>
+              <div class="contact-details">
+                <h4>Online Profiles</h4>
+                <ul class="profile-links">
+                  <li>
+                    <a href="https://github.com/jigyasa-patil" target="_blank" rel="noopener noreferrer" class="profile-chip">
+                      <span>🐙 GitHub:</span> jigyasa-patil
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://linkedin.com/in/jigyasa-patil" target="_blank" rel="noopener noreferrer" class="profile-chip">
+                      <span>💼 LinkedIn:</span> jigyasa-patil
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Visual Demo Form (as per project guidelines) -->
+          <div class="contact-form-panel">
+            <div class="form-banner-note">
+              <span class="note-icon">ℹ️</span>
+              <p>
+                <strong>Submission Notice:</strong> This contact form is a <em>visual demo only</em> (pure HTML5 &amp; CSS3 without backend or JavaScript, in compliance with project brief). To contact me directly, please email <a href="mailto:jigyasa2906@gmail.com">jigyasa2906@gmail.com</a>.
+              </p>
+            </div>
+
+            <form action="#contact" method="get" class="demo-form">
+              <div class="form-group">
+                <label for="full-name" class="form-label">Full Name <span class="required">*</span></label>
+                <input type="text" id="full-name" name="name" class="form-input" placeholder="e.g. Alex Johnson" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email-address" class="form-label">Email Address <span class="required">*</span></label>
+                <input type="email" id="email-address" name="email" class="form-input" placeholder="e.g. alex@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message-subject" class="form-label">Subject</label>
+                <input type="text" id="message-subject" name="subject" class="form-input" placeholder="e.g. Internship Inquiry / Collaboration">
+              </div>
+
+              <div class="form-group">
+                <label for="message-text" class="form-label">Your Message <span class="required">*</span></label>
+                <textarea id="message-text" name="message" rows="4" class="form-textarea" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit">
+                Send Message (Visual Demo)
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 6. Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-info">
+        <p class="copyright-line">&copy; 2026 Jigyasa Patil. All rights reserved.</p>
+        <p class="footer-meta">Built with semantic HTML5 &amp; modern CSS3 &bull; HTML &amp; CSS Internship Project</p>
+      </div>
+      <div class="footer-action">
+        <a href="#home" class="back-to-top" aria-label="Scroll back to top">
+          Back to top &uarr;
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
